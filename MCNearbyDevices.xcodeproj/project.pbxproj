@@ -10,16 +10,18 @@
 		D66935FE1F339FF000459D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66935FD1F339FF000459D32 /* AppDelegate.swift */; };
 		D66936001F339FF000459D32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66935FF1F339FF000459D32 /* ViewController.swift */; };
 		D66936021F339FF000459D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66936011F339FF000459D32 /* Assets.xcassets */; };
-		D66936051F339FF000459D32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66936031F339FF000459D32 /* Main.storyboard */; };
+		D669360D1F33A39000459D32 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D669360C1F33A39000459D32 /* MainMenu.xib */; };
+		D669360F1F33A92700459D32 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D669360E1F33A92700459D32 /* BluetoothService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D66935FA1F339FF000459D32 /* MCNearbyDevices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCNearbyDevices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66935FD1F339FF000459D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D66935FF1F339FF000459D32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D66935FF1F339FF000459D32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = MCNearbyDevices/ViewController.swift; sourceTree = "<group>"; };
 		D66936011F339FF000459D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D66936041F339FF000459D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D66936061F339FF000459D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D669360C1F33A39000459D32 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		D669360E1F33A92700459D32 /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			children = (
 				D66935FC1F339FF000459D32 /* MCNearbyDevices */,
 				D66935FB1F339FF000459D32 /* Products */,
+				D66935FF1F339FF000459D32 /* ViewController.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,9 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				D66935FD1F339FF000459D32 /* AppDelegate.swift */,
-				D66935FF1F339FF000459D32 /* ViewController.swift */,
+				D669360E1F33A92700459D32 /* BluetoothService.swift */,
 				D66936011F339FF000459D32 /* Assets.xcassets */,
-				D66936031F339FF000459D32 /* Main.storyboard */,
+				D669360C1F33A39000459D32 /* MainMenu.xib */,
 				D66936061F339FF000459D32 /* Info.plist */,
 			);
 			path = MCNearbyDevices;
@@ -121,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66936021F339FF000459D32 /* Assets.xcassets in Resources */,
-				D66936051F339FF000459D32 /* Main.storyboard in Resources */,
+				D669360D1F33A39000459D32 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,22 +136,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66936001F339FF000459D32 /* ViewController.swift in Sources */,
+				D669360F1F33A92700459D32 /* BluetoothService.swift in Sources */,
 				D66935FE1F339FF000459D32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D66936031F339FF000459D32 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D66936041F339FF000459D32 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D66936071F339FF000459D32 /* Debug */ = {
@@ -288,6 +281,7 @@
 				D669360B1F339FF000459D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
